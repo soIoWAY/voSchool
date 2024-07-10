@@ -1,8 +1,14 @@
+'use client'
 import Image from 'next/image'
+import { useState } from 'react'
 import { FaMoon } from 'react-icons/fa'
-import { MdMenu } from 'react-icons/md'
+import { MdClose, MdMenu } from 'react-icons/md'
 const Header = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const liStyles = 'hover:text-rose-600 transition-all'
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen)
+	}
 	return (
 		<header className='bg-white py-2'>
 			<div className='w-11/12 m-auto flex items-center justify-between'>
@@ -14,18 +20,35 @@ const Header = () => {
 					className='w-[70px] sm:w-[90px]'
 				/>
 				<nav>
-					<ul className='hidden sm:flex gap-10 font-semibold italic text-lg'>
-						<li className={liStyles}>Home</li>
-						<li className={liStyles}>About me</li>
-						<li className={liStyles}>Materials</li>
-						<li className={liStyles}>Contacts</li>
+					<ul
+						className={`fixed top-0 right-0 h-full w-2/4 bg-white shadow-lg transform ${
+							isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+						} transition-transform sm:static sm:flex sm:gap-10 sm:font-semibold sm:italic sm:text-lg sm:shadow-none sm:translate-x-0 z-[1000]`}
+					>
+						<li className='p-4 sm:hidden flex justify-end border-b'>
+							<button onClick={toggleMenu}>
+								<MdClose className='text-3xl' />
+							</button>
+						</li>
+						<li className={`${liStyles} p-4 sm:p-0`} onClick={toggleMenu}>
+							Home
+						</li>
+						<li className={`${liStyles} p-4 sm:p-0`} onClick={toggleMenu}>
+							About
+						</li>
+						<li className={`${liStyles} p-4 sm:p-0`} onClick={toggleMenu}>
+							Materials
+						</li>
+						<li className={`${liStyles} p-4 sm:p-0`} onClick={toggleMenu}>
+							Contacts
+						</li>
 					</ul>
 				</nav>
 				<div className='flex items-center gap-4'>
 					<button className='hidden sm:block bg-blue-950 border-2 border-blue-400 px-3 py-3 rounded-full'>
 						<FaMoon className='text-base sm:text-xl fill-yellow-500' />
 					</button>
-					<button>
+					<button onClick={toggleMenu} className='block sm:hidden'>
 						<MdMenu className='text-3xl' />
 					</button>
 				</div>
