@@ -1,7 +1,10 @@
 import Image from 'next/image'
 const About = () => {
 	return (
-		<div className='w-10/12 mt-12 m-auto flex-col-reverse sm:flex-row flex items-center justify-between gap-10 sm:gap-0'>
+		<div
+			className='w-10/12 mt-12 m-auto flex-col-reverse sm:flex-row flex items-center justify-between gap-10 sm:gap-0'
+			id='about'
+		>
 			<div className='sm:w-1/2'>
 				<h2 className='text-rose-600 text-3xl font-semibold'>
 					Hello, I`m Victoria

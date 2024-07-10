@@ -7,7 +7,10 @@ const Hero = () => {
 	const [activeHero, setActiveHero] = useState(0)
 	const images = ['/hero1.jpg', '/hero2.jpg', '/hero3.jpg']
 	return (
-		<div className='w-11/12 sm:w-10/12 m-auto flex flex-col sm:flex-row justify-center gap-20 mt-24'>
+		<div
+			className='w-11/12 sm:w-10/12 m-auto flex flex-col sm:flex-row justify-center gap-20 mt-24'
+			id='hero'
+		>
 			<div className='w-full sm:w-5/12 relative overflow-hidden h-96'>
 				{images.map((src, index) => (
 					<Image

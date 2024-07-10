@@ -30,6 +30,7 @@ const Footer = () => {
 					<ul className='flex flex-col gap-2'>
 						<li>About</li>
 						<li>Home</li>
+						<li>Materials</li>
 						<li>Contacts</li>
 					</ul>
 				</div>

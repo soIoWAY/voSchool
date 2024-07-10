@@ -2,7 +2,10 @@ import { FaInstagram, FaPhone, FaTelegram } from 'react-icons/fa'
 
 const Contacts = () => {
 	return (
-		<div className='w-11/12 m-auto flex flex-col items-center text-center mt-16 mb-5'>
+		<div
+			className='w-11/12 m-auto flex flex-col items-center text-center mt-16 mb-5'
+			id='contacts'
+		>
 			<div className='flex flex-col gap-5'>
 				<h3>I aim to respond to all messages within 24 hours.</h3>
 				<h1 className='text-4xl text-rose-600 font-semibold'>Contact me</h1>

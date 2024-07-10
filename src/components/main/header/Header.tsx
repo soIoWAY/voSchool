@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react'
 import { FaMoon } from 'react-icons/fa'
 import { MdClose, MdMenu } from 'react-icons/md'
@@ -31,16 +32,16 @@ const Header = () => {
 							</button>
 						</li>
 						<li className={`${liStyles} p-4 sm:p-0`} onClick={toggleMenu}>
-							Home
+							<Link href='/'>Home</Link>
 						</li>
 						<li className={`${liStyles} p-4 sm:p-0`} onClick={toggleMenu}>
-							About
+							<Link href='/#about'>About</Link>
 						</li>
 						<li className={`${liStyles} p-4 sm:p-0`} onClick={toggleMenu}>
 							Materials
 						</li>
 						<li className={`${liStyles} p-4 sm:p-0`} onClick={toggleMenu}>
-							Contacts
+							<Link href='/#contacts'>Contacts</Link>
 						</li>
 					</ul>
 				</nav>
