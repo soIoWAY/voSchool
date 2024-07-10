@@ -1,5 +1,5 @@
 import Image from 'next/image'
-const Hero = () => {
+const About = () => {
 	return (
 		<div className='w-10/12 mt-12 m-auto flex items-center justify-between'>
 			<div className='w-1/2'>
@@ -31,4 +31,4 @@ const Hero = () => {
 	)
 }
 
-export default Hero
+export default About
