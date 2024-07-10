@@ -1,12 +1,12 @@
 import Image from 'next/image'
 const About = () => {
 	return (
-		<div className='w-10/12 mt-12 m-auto flex items-center justify-between'>
-			<div className='w-1/2'>
+		<div className='w-10/12 mt-12 m-auto flex-col-reverse sm:flex-row flex items-center justify-between gap-10 sm:gap-0'>
+			<div className='sm:w-1/2'>
 				<h2 className='text-rose-600 text-3xl font-semibold'>
 					Hello, I`m Victoria
 				</h2>
-				<p className='mt-3 text-lg'>
+				<p className='mt-3 text-lg leading-7'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
 					mollitia id, velit doloremque, commodi iste quo aliquam possimus qui
 					in incidunt nulla voluptatibus est, quam quidem sit deleniti minima!
@@ -20,7 +20,7 @@ const About = () => {
 			</div>
 			<div className=''>
 				<Image
-					src='/author.jpg'
+					src='/author4.jpg'
 					width={400}
 					height={400}
 					alt='author'

@@ -7,8 +7,8 @@ const Hero = () => {
 	const [activeHero, setActiveHero] = useState(0)
 	const images = ['/hero1.jpg', '/hero2.jpg', '/hero3.jpg']
 	return (
-		<div className='w-10/12 m-auto flex justify-center gap-20 mt-24'>
-			<div className='w-5/12 relative overflow-hidden h-96'>
+		<div className='w-11/12 sm:w-10/12 m-auto flex flex-col sm:flex-row justify-center gap-20 mt-24'>
+			<div className='w-full sm:w-5/12 relative overflow-hidden h-96'>
 				{images.map((src, index) => (
 					<Image
 						key={index}
@@ -22,7 +22,7 @@ const Hero = () => {
 					/>
 				))}
 			</div>
-			<div className='w-5/12 flex flex-col justify-between'>
+			<div className='w-full sm:w-5/12 flex flex-col gap-4 sm:gap-0 justify-between'>
 				<div
 					className={`flex flex-col gap-5 border-l-[3px]  ${
 						activeHero === 0 ? 'border-black' : 'border-transparent'

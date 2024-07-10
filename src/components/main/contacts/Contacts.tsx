@@ -11,10 +11,10 @@ const Contacts = () => {
 					lesson.
 				</h2>
 			</div>
-			<div className='flex justify-between mt-6 gap-20'>
+			<div className='flex justify-between mt-12 sm:mt-6 gap-10 sm:gap-20'>
 				<div className='flex flex-col items-center gap-3'>
 					<FaInstagram className='text-4xl fill-pink-600' />
-					<h2 className='text-2xl'>Instagram</h2>
+					<h2 className='text-xl sm:text-2xl'>Instagram</h2>
 					<a
 						href='https://www.instagram.com/viktoria_olehivna_/'
 						className='underline font-semibold text-rose-600'
@@ -25,7 +25,7 @@ const Contacts = () => {
 				</div>
 				<div className='flex flex-col items-center gap-3'>
 					<FaTelegram className='text-4xl fill-blue-500' />
-					<h2 className='text-2xl'>Telegram</h2>
+					<h2 className='text-xl sm:text-2xl'>Telegram</h2>
 					<a
 						href='https://t.me/viktoria_olehivna'
 						target='_blank'
@@ -36,7 +36,7 @@ const Contacts = () => {
 				</div>
 				<div className='flex flex-col items-center gap-3'>
 					<FaPhone className='text-4xl fill-green-500' />
-					<h2 className='text-2xl'>Phone</h2>
+					<h2 className='text-xl sm:text-2xl'>Phone</h2>
 					<a
 						href='tel:+380 96 046 77 35'
 						className='underline font-semibold text-rose-600'

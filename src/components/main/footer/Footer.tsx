@@ -2,8 +2,8 @@ import Image from 'next/image'
 import { FaInstagram } from 'react-icons/fa'
 const Footer = () => {
 	return (
-		<div className='w-11/12 m-auto mt-24 flex gap-20 bg-white py-5'>
-			<div className='w-5/12'>
+		<div className='w-11/12 m-auto mt-24 flex flex-col sm:flex-row gap-20 bg-white py-5'>
+			<div className='w-full sm:w-5/12'>
 				<div className='flex items-center'>
 					<Image src='/vologo.svg' width={70} height={70} alt='logo' />
 					<h2 className='font-semibold text-2xl'>V&O SCHOOL</h2>
@@ -24,7 +24,7 @@ const Footer = () => {
 					</form>
 				</div>
 			</div>
-			<div className='w-7/12 flex justify-between'>
+			<div className='w-full sm:w-7/12 flex flex-wrap gap-10 sm:gap-0 justify-between'>
 				<div className='flex flex-col gap-3'>
 					<h2 className='font-semibold text-xl'>About</h2>
 					<ul className='flex flex-col gap-2'>
