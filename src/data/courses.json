@@ -1,0 +1,12 @@
+{
+	"CEFR Courses Adults": {
+		"A1": ["lesson1", "lesson2", "lesson3"],
+		"A1+": ["lesson1", "lesson2", "lesson3"],
+		"A2": ["lesson1", "lesson2", "lesson3"],
+		"A2+": ["lesson1", "lesson2", "lesson3"],
+		"B1": ["lesson1", "lesson2", "lesson3"],
+		"B1+": ["lesson1", "lesson2", "lesson3"],
+		"B2": ["lesson1", "lesson2", "lesson3"],
+		"B2+": ["lesson1", "lesson2", "lesson3"]
+	}
+}

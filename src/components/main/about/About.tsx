@@ -9,14 +9,28 @@ const About = () => {
 				<h2 className='text-rose-600 text-3xl font-semibold'>
 					Hello, I`m Victoria
 				</h2>
-				<p className='mt-3 text-lg leading-7'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-					mollitia id, velit doloremque, commodi iste quo aliquam possimus qui
-					in incidunt nulla voluptatibus est, quam quidem sit deleniti minima!
-					Nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
-					ipsam tenetur vitae veritatis sapiente. Praesentium quisquam repellat
-					autem debitis quaerat voluptatem laboriosam iure eaque.
-				</p>
+				<div className='flex flex-col'>
+					<p className='mt-3 text-lg leading-7'>
+						Привіт, друже! Гайда знайомитись! Я - Вікторія, яка з раннього
+						дитинства має хист до вивчення мов і свою любов прагне передати саме
+						тобі. Я не вимагатиму вивчення ста слів чи виконання двадцяти вправ
+						за один день, зовсім НІ! Навчання зі мною - це безперечно крута
+						можливість пізнати світ англійської швидко, цікаво та результативно.
+						Тобі не варто хвилюватись про нудні уроки, схожі до традиційної
+						школи, адже на своїх заняттях використовую різні інтерактивні та
+						розмовні ігри.
+					</p>
+					<h3 className='mt-2 text-lg'>Основні мої правила:</h3>
+					<ul className='text-lg mt-2'>
+						<li>• викладач - твій друг!</li>
+						<li>• помилятись - нормально!</li>
+						<li>• систематичність - ключ до нових звершень!</li>
+					</ul>
+					<p className='mt-2 text-lg'>
+						Саме ТЕБЕ хочу запросити у свою «маленьку Країну Знань»! Не упусти
+						круту можливість! З нетерпінням чекатиму!
+					</p>
+				</div>
 				<button className='mt-10 bg-rose-600 px-6 py-2 text-white font-semibold hover:bg-rose-500 transition-all'>
 					Get Started
 				</button>

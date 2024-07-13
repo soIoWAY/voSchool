@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { FaInstagram } from 'react-icons/fa'
 const Footer = () => {
 	return (
@@ -28,10 +29,16 @@ const Footer = () => {
 				<div className='flex flex-col gap-3'>
 					<h2 className='font-semibold text-xl'>About</h2>
 					<ul className='flex flex-col gap-2'>
-						<li>About</li>
-						<li>Home</li>
+						<li>
+							<Link href='/'>Home</Link>
+						</li>
+						<li>
+							<Link href='/#about'>About</Link>
+						</li>
 						<li>Materials</li>
-						<li>Contacts</li>
+						<li>
+							<Link href='/#contacts'>Contacts</Link>
+						</li>
 					</ul>
 				</div>
 				<div className='flex flex-col gap-3'>
@@ -48,9 +55,15 @@ const Footer = () => {
 				<div className='flex flex-col gap-3'>
 					<h2 className='font-semibold text-xl'>Follow Me</h2>
 					<ul className='flex flex-col gap-2'>
-						<li className='flex items-center gap-2'>
-							<FaInstagram className='text-2xl' />
-							Instagram
+						<li className=''>
+							<a
+								href='https://www.instagram.com/viktoria_olehivna_/'
+								className='flex items-center gap-2'
+								target='_blank'
+							>
+								<FaInstagram className='text-2xl' />
+								Instagram
+							</a>
 						</li>
 					</ul>
 				</div>

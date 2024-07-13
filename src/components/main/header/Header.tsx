@@ -38,7 +38,7 @@ const Header = () => {
 							<Link href='/#about'>About</Link>
 						</li>
 						<li className={`${liStyles} p-4 sm:p-0`} onClick={toggleMenu}>
-							Materials
+							<Link href='/courses'>Courses</Link>
 						</li>
 						<li className={`${liStyles} p-4 sm:p-0`} onClick={toggleMenu}>
 							<Link href='/#contacts'>Contacts</Link>
